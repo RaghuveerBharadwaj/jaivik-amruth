@@ -1,0 +1,96 @@
+.contact-form {
+  padding: 80px 10px 10px;
+  min-height: 100vh;
+  .form {
+    z-index: 1;
+    box-shadow: 0 0px 16px 16px rgba(135, 206, 235, .25);
+    max-width: 1040px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 40px 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
+    position: relative;
+    @media only screen and (max-width: 768px) {
+      padding: 20px;
+    }
+
+    .full,
+    .half {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      position: relative;
+
+      &.full {
+        width: 100%;
+      }
+
+      &.half {
+        width: 47%;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      label {
+        align-self: flex-start;
+        font-weight: 600;
+        color: steelblue;
+        margin: 5px;
+      }
+
+      span {
+        margin: 5px;
+        align-self: flex-start;
+        color: tomato;
+      }
+
+      input, textarea {
+        height: 40px;
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid skyblue;
+        outline: transparent;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      textarea {
+        height: 100px;
+      }
+    }
+
+    button {
+      display: block;
+      margin: auto;
+      width: 200px;
+      background-color: transparent;
+      border: 3px solid steelblue;
+      border-radius: 25px;
+      font-size: 20px;
+      height: 50px;
+      color: steelblue;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .4s linear;
+
+      &:hover {
+        color: white;
+        background-color: steelblue;
+        border: 3px solid steelblue;
+      }
+
+      &:focus {
+        color: steelblue;
+        outline: none;
+        background-color: white;
+        border: 3px solid steelblue;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "jaivikamruth",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.21.1",
+    "formik": "^2.2.6",
+    "next": "10.0.7",
+    "node-sass": "^4.14.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-responsive-carousel": "^3.2.12"
+  }
+}
